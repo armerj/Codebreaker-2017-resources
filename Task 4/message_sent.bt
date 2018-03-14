@@ -1,0 +1,43 @@
+//------------------------------------------------
+//--- 010 Editor v8.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: //------------------------------------------------
+//--- 010 Editor v8.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+struct FILE {
+        struct TOPIC {
+            char    message_topic[] <bgcolor=cSilver>;
+        } topic;
+
+        struct HEADER {
+            int     len_of_signature <bgcolor=cPurple>;
+            int     len_of_message <bgcolor=cAqua>;
+            int     rsa_block_offset <bgcolor=cLtYellow>;
+            int     offset_to_message <bgcolor=cLtGray>;
+            char    rsa_signature[0x200] <bgcolor=cLtBlue>;
+        } header;
+
+            int     len_of_text <bgcolor=cGreen>;
+            char    text_sent[0xB] <bgcolor=cLtGreen>;
+
+            int     len_of_attacker_text <bgcolor=cDkRed>;
+            char    attacker_text_sent[0xB] <bgcolor=cRed>;
+        
+
+} file;
