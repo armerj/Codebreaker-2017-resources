@@ -1,0 +1,1 @@
+sudo docker cp `sudo docker ps | grep 'nginx' | awk '{print $1}'`:$1 $2

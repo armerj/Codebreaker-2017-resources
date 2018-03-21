@@ -1,0 +1,1 @@
+sudo docker exec -ti `sudo docker ps | grep 'nginx' | awk '{print $1}'` /bin/bash
